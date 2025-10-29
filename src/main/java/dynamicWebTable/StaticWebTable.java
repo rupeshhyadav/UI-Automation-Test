@@ -3,9 +3,11 @@ package dynamicWebTable;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class StaticWebTable {
 
@@ -39,9 +41,8 @@ public class StaticWebTable {
 				lowestCourse = courseText;
 			}
 		}
-		
-		System.out.println(lowestPrice + "-----"+lowestCourse);
 
+		System.out.println(lowestPrice + "-----" + lowestCourse);
 		wd.quit();
 
 	}
